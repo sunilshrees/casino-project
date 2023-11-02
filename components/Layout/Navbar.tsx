@@ -117,17 +117,8 @@ const Navbar = () => {
                 </div>
             </div>
             <Drawer anchor={'right'} open={open} onClose={toggleDrawer(false)}>
-                <div className="pt-16 bg-[#1F2029] text-white h-full relative">
-                    <div className="w-full  absolute bottom-0 text-[#DCD9CD] hover:text-[#E9B10E] px-8  py-6 cursor-pointer">
-                        <Divider />
-
-                        <div className="mt-3 flex items-center">
-                            <i className="bx bx-exit -mt-[1px] mr-[4px] text-[14px] "></i>
-                            <span className=" cursor-pointer text-[12px]">
-                                Logout
-                            </span>
-                        </div>
-                    </div>
+                <div className="pt-16 bg-[#1F2029] text-white h-full relative overflow-y-scroll">
+                    
                     <Box
                         sx={{
                             width: 250,
@@ -163,7 +154,7 @@ const Navbar = () => {
                         <div className="bg-[#24252F] mt-3 mx-3 pt-3 pb-1 rounded-md">
                             <div className="flex justify-between items-center px-4 mb-4">
                                 <div className="cursor-pointer flex items-center">
-                                    <span className="text-[#DCD9CD] ml-2">
+                                    <span className="text-[#DCD9CD] ml-2 text-[12px]">
                                         Games
                                     </span>
                                 </div>
@@ -222,6 +213,16 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="w-full   text-[#DCD9CD] hover:text-[#E9B10E] px-8  py-6 cursor-pointer">
+                        <Divider />
+
+                        <div className="mt-3 flex items-center">
+                            <i className="bx bx-exit -mt-[1px] mr-[4px] text-[14px] "></i>
+                            <span className=" cursor-pointer text-[12px]">
+                                Logout
+                            </span>
+                        </div>
+                    </div>
                     </Box>
                 </div>
             </Drawer>

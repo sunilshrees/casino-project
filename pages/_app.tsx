@@ -13,6 +13,22 @@ function MyApp({ Component, pageProps }) {
         <>
             <Head>
                 <title>Casino : A Gambling Website</title>
+                <meta property="og:title" content="Casino" />
+                <meta
+                    property="og:description"
+                    content=" A Gambling Website"
+                />
+                <meta
+                    property="og:image"
+                    content="https://www.freepik.com/free-vector/casino-neon-sign_3816804.htm#query=casino%20logo&position=1&from_view=keyword&track=ais"
+                />
+                <meta
+                    property="og:image:secure_url"
+                    content="https://www.freepik.com/free-vector/casino-neon-sign_3816804.htm#query=casino%20logo&position=1&from_view=keyword&track=ais"
+                />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
             </Head>
 
             <Layout>

@@ -3,7 +3,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     const newArray = Array.from({ length }, (_, index) => index * 2);
     return (
         <div
-            className={`fixed top-20 left-0  h-screen mt-[-80px] pt-[70px] md:pt-[84px] ${
+            className={`fixed top-20 left-0  h-screen mt-[-80px] pt-[70px] md:pt-[84px] pb-20 md:pb-0 ${
                 isOpen ? 'w-[250px] opacity-1' : 'w-0 opacity-0'
             } transition-all duration-200 ease-in-out bg-[#1F2029]  z-20`}>
             <div className="relative py-3 px-4 flex flex-col justify-between h-full ">
