@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display: none;
+}
+
+body {
+    color: white !important;
+    font-family: 'Poppins', sans-serif !important;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.btn-background {
+    background: radial-gradient(
+            ellipse farthest-corner at right bottom,
+            #fedb37 0%,
+            #fdb931 8%,
+            #9f7928 30%,
+            #8a6e2f 40%,
+            transparent 80%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at left top,
+            #ffffff 0%,
+            #ffffac 8%,
+            #d1b464 25%,
+            #5d4a1f 62.5%,
+            #5d4a1f 100%
+        );
+}
+
+.chat__messages {
+    position: relative;
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}

@@ -1,0 +1,50 @@
+const Sidebar = ({ isOpen, toggleSidebar }) => {
+    const length = 12;
+    const newArray = Array.from({ length }, (_, index) => index * 2);
+    return (
+        <div
+            className={`fixed top-20 left-0  h-screen mt-[-80px] pt-[70px] md:pt-[84px] ${
+                isOpen ? 'w-[250px] opacity-1' : 'w-0 opacity-0'
+            } transition-all duration-200 ease-in-out bg-[#1F2029]  z-20`}>
+            <div className="relative py-3 px-4 flex flex-col justify-between h-full ">
+                <div className="flex justify-between items-center mb-4">
+                    <h1 className="text-[12px] lg-text[14px]">Chat</h1>
+                    <button className=" p-0" onClick={toggleSidebar}>
+                        <i className="bx bxs-x-circle text-white hover:text-[#E9B10E]"></i>
+                    </button>
+                </div>
+                <div className="pb-4 w-[220px]  h-full overflow-y-auto overflow-x-hidden chat__messages whitespace-normal  ">
+                    {newArray?.map((m, index) => (
+                        <div
+                            className="flex items-start text-[12px] py-1"
+                            key={index}>
+                            <i className="bx bxs-user text-[#E9B10E] pt-[3px]"></i>
+                            <h2 className="text-[12px] font-bold ml-1">Sam</h2>{' '}
+                            <h3 className="text-[12px] ml-1 flex justify-start break-all">
+                                She says he is ger ssa Lorem ipsum dolor sit
+                                amet consectetur adipisicing.
+                            </h3>
+                        </div>
+                    ))}
+                </div>
+                {/* <div className="fixed bottom-2"> */}
+
+                <div className="flex w-full items-center relative bg-[#141419] rounded-md">
+                    <input
+                        type="text"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        placeholder="Type Message..."
+                        className="w-[220px] py-2 pl-3 outline-none rounded-md border-none placeholder:text-[12px] text-white bg-[#141419]"
+                    />
+                    <button className=" absolute right-2 top-[8px]">
+                        <i className="bx bxs-send text-white hover:text-[#E9B10E]"></i>
+                    </button>
+                </div>
+                {/* </div> */}
+            </div>
+        </div>
+    );
+};
+
+export default Sidebar;
