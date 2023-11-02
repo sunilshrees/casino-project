@@ -10,7 +10,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <div className="flex justify-between items-center mb-4">
                     <h1 className="text-[12px] lg-text[14px]">Chat</h1>
                     <button className=" p-0" onClick={toggleSidebar}>
-                        <i className="bx bxs-x-circle text-white hover:text-[#E9B10E]"></i>
+                        <i className="bx bx-x text-white hover:text-[#E9B10E] text-[16px] md:text-[18px]"></i>
                     </button>
                 </div>
                 <div className="pb-4 w-[220px]  h-full overflow-y-auto overflow-x-hidden chat__messages whitespace-normal  ">
