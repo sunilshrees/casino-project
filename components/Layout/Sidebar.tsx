@@ -5,7 +5,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <div
             className={`fixed top-20 left-0  h-screen mt-[-80px] pt-[70px] md:pt-[84px] md:pb-0 ${
                 isOpen ? 'w-[250px] opacity-1' : 'w-0 opacity-0'
-            } transition-all duration-200 ease-in-out bg-[#1F2029]  z-20`}>
+            } transition-all duration-200 ease-in-out bg-[#1F2029]  z-20 rounded-sm`}>
             <div className="relative py-3 px-4 flex flex-col justify-between h-full ">
                 <div className="flex justify-between items-center mb-4">
                     <h1 className="text-[12px] lg-text[14px]">Chat</h1>
@@ -13,7 +13,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         <i className="bx bx-x text-white hover:text-[#E9B10E] text-[16px] md:text-[18px]"></i>
                     </button>
                 </div>
-                <div className="pb-4 w-[220px]  h-full overflow-y-auto overflow-x-hidden chat__messages whitespace-normal  ">
+                <div className="pb-4 w-[220px]  h-full overflow-y-auto overflow-x-hidden chat__messages whitespace-normal  mb-4">
                     {newArray?.map((m, index) => (
                         <div
                             className="flex items-start text-[12px] py-1"
@@ -27,7 +27,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         </div>
                     ))}
                 </div>
-                {/* <div className="fixed bottom-2"> */}
+                
 
                 <div className="flex w-full items-center relative bg-[#141419] rounded-md">
                     <input
@@ -41,7 +41,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         <i className="bx bxs-send text-white hover:text-[#E9B10E]"></i>
                     </button>
                 </div>
-                {/* </div> */}
+                
             </div>
         </div>
     );
