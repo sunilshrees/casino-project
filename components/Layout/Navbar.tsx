@@ -21,7 +21,7 @@ const Navbar = () => {
         };
 
     return (
-        <nav className="fixed top-0 bg-[#24252F] p-4 px-6 md:px-12  z-[999999999999999999999] w-full">
+        <nav className="fixed top-0 bg-[#24252F] p-4 px-6 md:px-12  z_index_navbar w-full">
             <div className="flex justify-between items-center ">
                 <button className="btn-background px-[10px] py-[6px] lg:px-4 lg:py-2 text-[12px] md:text-[14px] lg:text-[16px] rounded-md mt-[4px]">
                     Deposit
