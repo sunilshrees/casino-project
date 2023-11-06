@@ -20,11 +20,11 @@ function MyApp({ Component, pageProps }) {
                 />
                 <meta
                     property="og:image"
-                    content="https://www.freepik.com/free-vector/casino-neon-sign_3816804.htm#query=casino%20logo&position=1&from_view=keyword&track=ais"
+                    content="/images/logo.png"
                 />
                 <meta
                     property="og:image:secure_url"
-                    content="https://www.freepik.com/free-vector/casino-neon-sign_3816804.htm#query=casino%20logo&position=1&from_view=keyword&track=ais"
+                    content="/images/logo.png"
                 />
                 <meta property="og:image:type" content="image/png" />
                 <meta property="og:image:width" content="1200" />
