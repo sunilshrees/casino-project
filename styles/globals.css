@@ -7,6 +7,11 @@
     display: none;
 }
 
+::selection {
+    background-color: #2f80ed; /* Set the background color you want when text is selected */
+    color: #FFFFFF; /* Set the text color you want when text is selected */
+  }
+
 body {
     color: white !important;
     font-family: 'Poppins', sans-serif !important;
@@ -17,19 +22,18 @@ body {
 .btn-background {
     background: radial-gradient(
             ellipse farthest-corner at right bottom,
-            #fedb37 0%,
-            #fdb931 8%,
-            #9f7928 30%,
-            #8a6e2f 40%,
+            #56ccf2 0%,
+            #2f80ed 8%,
+            #56ccf2 40%,
             transparent 80%
         ),
         radial-gradient(
             ellipse farthest-corner at left top,
             #ffffff 0%,
-            #ffffac 8%,
-            #d1b464 25%,
-            #5d4a1f 62.5%,
-            #5d4a1f 100%
+            #56ccf2 8%,
+            #2f80ed 25%,
+            #56ccf2 62.5%,
+            #56ccf2 100%
         );
 }
 
@@ -45,4 +49,30 @@ body {
 
 .z_index_navbar {
     z-index: 9999 !important;
+}
+
+.hoverText {
+    /* transition: 0.5s; */
+    background-image: linear-gradient(
+        to left,
+        #56ccf2 0%,
+        #2f80ed 51%,
+        #56ccf2 100%
+    );
+    -webkit-background-clip: text;
+    transition: color .3s ease-in-out;
+    color: white;
+}
+
+.hoverText:hover {
+    background-image: linear-gradient(
+        to right,
+        #56ccf2 0%,
+        #2f80ed 51%,
+        #56ccf2 100%
+    );
+    background-position: right center;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: color .3s ease-in-out;
 }
